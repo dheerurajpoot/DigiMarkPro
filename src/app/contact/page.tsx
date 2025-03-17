@@ -36,8 +36,8 @@ export default function ContactPage() {
 			</section>
 
 			{/* Contact Form and Info */}
-			<section className='w-full py-12 md:py-24 lg:py-32 bg-background'>
-				<div className='container px-4 md:px-6'>
+			<section className='w-full py-12 bg-background'>
+				<div className='container mx-auto px-4 md:px-6'>
 					<div className='grid gap-8 lg:grid-cols-2'>
 						<Card>
 							<CardHeader>
@@ -130,30 +130,6 @@ export default function ContactPage() {
 									</Button>
 								</CardContent>
 							</Card>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Map Section */}
-			<section className='w-full py-12 md:py-24 lg:py-32 bg-muted'>
-				<div className='container px-4 md:px-6'>
-					<div className='flex flex-col items-center justify-center space-y-4 text-center mb-12'>
-						<div className='space-y-2'>
-							<h2 className='text-3xl font-bold tracking-tighter sm:text-4xl'>
-								Visit Our Office
-							</h2>
-							<p className='max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-								We're located in the heart of Digital City. Stop
-								by for a coffee and a chat!
-							</p>
-						</div>
-					</div>
-					<div className='aspect-video w-full rounded-lg overflow-hidden border bg-muted'>
-						<div className='w-full h-full bg-muted flex items-center justify-center'>
-							<p className='text-muted-foreground'>
-								Map would be embedded here
-							</p>
 						</div>
 					</div>
 				</div>
