@@ -27,9 +27,38 @@ import {
 	Clock,
 } from "lucide-react";
 
+interface Author {
+	name: string;
+	role: string;
+	avatar: string;
+}
+
+interface Post {
+	title: string;
+	slug: string;
+	excerpt: string;
+	content: string;
+	date: string;
+	author: Author;
+	category: string;
+	image: string;
+	tags: string[];
+	readTime: string;
+}
+
+interface RelatedPost {
+	title: string;
+	excerpt: string;
+	date: string;
+	author: string;
+	category: string;
+	image: string;
+	slug: string;
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-	const [post, setPost] = useState<any>(null);
-	const [relatedPosts, setRelatedPosts] = useState<any[]>([]);
+	const [post, setPost] = useState<Post | null>(null);
+	const [relatedPosts, setRelatedPosts] = useState<RelatedPost[]>([]);
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
@@ -183,13 +212,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 							className='space-y-2 max-w-3xl'
 							variants={itemVariants}>
 							<div className='inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground'>
-								{post.category}
+								{post?.category}
 							</div>
 							<h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-								{post.title}
+								{post?.title}
 							</h1>
 							<p className='text-muted-foreground md:text-xl/relaxed'>
-								{post.excerpt}
+								{post?.excerpt}
 							</p>
 						</motion.div>
 						<motion.div
@@ -197,15 +226,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 							variants={itemVariants}>
 							<div className='flex items-center gap-1'>
 								<Calendar className='h-4 w-4' />
-								<span>{post.date}</span>
+								<span>{post?.date}</span>
 							</div>
 							<div className='flex items-center gap-1'>
 								<User className='h-4 w-4' />
-								<span>{post.author.name}</span>
+								<span>{post?.author.name}</span>
 							</div>
 							<div className='flex items-center gap-1'>
 								<Clock className='h-4 w-4' />
-								<span>{post.readTime}</span>
+								<span>{post?.readTime}</span>
 							</div>
 						</motion.div>
 					</motion.div>
@@ -221,8 +250,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}>
 						<Image
-							src={post.image || "/placeholder.svg"}
-							alt={post.title}
+							src={post?.image || "/placeholder.svg"}
+							alt='blog image'
 							fill
 							className='object-cover'
 							priority
@@ -245,45 +274,49 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 							<div className='flex items-center gap-4 p-4 bg-muted rounded-lg'>
 								<Avatar className='h-12 w-12'>
 									<AvatarImage
-										src={post.author.avatar}
-										alt={post.author.name}
+										src={post?.author.avatar}
+										alt={post?.author.name}
 									/>
 									<AvatarFallback>
-										{post.author.name.charAt(0)}
+										{post?.author.name.charAt(0)}
 									</AvatarFallback>
 								</Avatar>
 								<div>
 									<p className='font-semibold'>
-										{post.author.name}
+										{post?.author.name}
 									</p>
 									<p className='text-sm text-muted-foreground'>
-										{post.author.role}
+										{post?.author.role}
 									</p>
 								</div>
 							</div>
 
 							{/* Article Content */}
-							<article className='prose prose-lg max-w-none dark:prose-invert'>
-								<div
-									dangerouslySetInnerHTML={{
-										__html: post.content,
-									}}
-								/>
-							</article>
+							{post && (
+								<article className='prose prose-lg max-w-none dark:prose-invert'>
+									<div
+										dangerouslySetInnerHTML={{
+											__html: post.content,
+										}}
+									/>
+								</article>
+							)}
 
 							{/* Tags */}
 							<div className='flex flex-wrap gap-2'>
-								{post.tags.map((tag: string, index: number) => (
-									<Link
-										key={index}
-										href={`/blog/tag/${tag
-											.toLowerCase()
-											.replace(/\s+/g, "-")}`}>
-										<div className='bg-muted hover:bg-muted/80 px-3 py-1 rounded-full text-sm'>
-											{tag}
-										</div>
-									</Link>
-								))}
+								{post?.tags.map(
+									(tag: string, index: number) => (
+										<Link
+											key={index}
+											href={`/blog/tag/${tag
+												.toLowerCase()
+												.replace(/\s+/g, "-")}`}>
+											<div className='bg-muted hover:bg-muted/80 px-3 py-1 rounded-full text-sm'>
+												{tag}
+											</div>
+										</Link>
+									)
+								)}
 							</div>
 
 							{/* Social Share */}
