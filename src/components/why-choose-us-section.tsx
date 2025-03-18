@@ -15,8 +15,8 @@ export default function WhyChooseUsSection() {
 								Results-Driven Digital Marketing
 							</h2>
 							<p className='max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-								We're committed to delivering measurable results
-								that help your business grow.
+								We&apos;re committed to delivering measurable
+								results that help your business grow.
 							</p>
 						</div>
 						<div className='space-y-4'>

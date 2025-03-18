@@ -46,8 +46,8 @@ export default function ClientsSection() {
 							Trusted by Leading Brands
 						</h2>
 						<p className='max-w-[900px] text-muted-foreground'>
-							We've helped businesses of all sizes achieve their
-							digital marketing goals.
+							We&apos;ve helped businesses of all sizes achieve
+							their digital marketing goals.
 						</p>
 					</div>
 				</motion.div>

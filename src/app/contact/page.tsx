@@ -34,7 +34,7 @@ export default function ContactPage() {
 							</h1>
 							<p className='max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
 								Have questions or ready to start your digital
-								marketing journey? We're here to help.
+								marketing journey? We&apos;re here to help.
 							</p>
 						</div>
 					</div>

@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
 	COMPANY_ADDRESS,
 	COMPANY_EMAIL,
@@ -66,12 +64,13 @@ export default function PrivacyPolicyClientPage() {
 								1. Introduction
 							</h2>
 							<p>
-								At {COMPANY_NAME} ("we," "our," or "us"), we
-								respect your privacy and are committed to
-								protecting your personal information. This
-								Privacy Policy explains how we collect, use,
-								disclose, and safeguard your information when
-								you visit our website or use our services.
+								At {COMPANY_NAME} (&quot;we,&quot;
+								&quot;our,&quot; or &quot;us&quot;), we respect
+								your privacy and are committed to protecting
+								your personal information. This Privacy Policy
+								explains how we collect, use, disclose, and
+								safeguard your information when you visit our
+								website or use our services.
 							</p>
 							<p>
 								Please read this Privacy Policy carefully. If
@@ -270,8 +269,8 @@ export default function PrivacyPolicyClientPage() {
 							</ul>
 							<p>
 								To exercise these rights, please contact us
-								using the information provided in the "Contact
-								Us" section below.
+								using the information provided in the
+								&quot;Contact Us&quot; section below.
 							</p>
 						</div>
 
@@ -292,7 +291,7 @@ export default function PrivacyPolicyClientPage() {
 
 						<div className='space-y-4'>
 							<h2 className='text-2xl font-bold'>
-								8. Children's Privacy
+								8. Children&apos;s Privacy
 							</h2>
 							<p>
 								Our services are not intended for individuals
@@ -313,8 +312,8 @@ export default function PrivacyPolicyClientPage() {
 								We may update our Privacy Policy from time to
 								time. We will notify you of any changes by
 								posting the new Privacy Policy on this page and
-								updating the "Last updated" date. You are
-								advised to review this Privacy Policy
+								updating the &quot;Last updated&quot; date. You
+								are advised to review this Privacy Policy
 								periodically for any changes.
 							</p>
 						</div>

@@ -24,6 +24,7 @@ import {
 	Linkedin,
 	Mail,
 	ArrowRight,
+	Clock,
 } from "lucide-react";
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -360,7 +361,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 												</div>
 											</div>
 											<p>
-												Great article! I've been
+												Great article! I&apos;ve been
 												implementing some of these
 												strategies and have seen
 												significant improvements in our
@@ -506,24 +507,5 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 				</div>
 			</section>
 		</div>
-	);
-}
-
-function Clock({ className }: { className?: string }) {
-	return (
-		<svg
-			xmlns='http://www.w3.org/2000/svg'
-			width='24'
-			height='24'
-			viewBox='0 0 24 24'
-			fill='none'
-			stroke='currentColor'
-			strokeWidth='2'
-			strokeLinecap='round'
-			strokeLinejoin='round'
-			className={className}>
-			<circle cx='12' cy='12' r='10' />
-			<polyline points='12 6 12 12 16 14' />
-		</svg>
 	);
 }

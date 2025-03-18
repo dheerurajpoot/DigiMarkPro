@@ -36,8 +36,8 @@ export default function Testimonials() {
 							What Our Clients Say
 						</h2>
 						<p className='max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-							Don't just take our word for it. Here's what our
-							clients have to say about our services.
+							Don&apos;t just take our word for it. Here&apos;s
+							what our clients have to say about our services.
 						</p>
 					</div>
 				</div>
@@ -47,7 +47,7 @@ export default function Testimonials() {
 							<CardContent className='p-6'>
 								<Quote className='h-8 w-8 text-primary/20 absolute top-4 right-4' />
 								<p className='mb-4 text-muted-foreground'>
-									"{testimonial.quote}"
+									&quot;{testimonial.quote}&quot;
 								</p>
 								<div className='flex items-center gap-4'>
 									<Image

@@ -1,9 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
 	COMPANY_ADDRESS,
 	COMPANY_EMAIL,
@@ -67,7 +64,8 @@ export default function CookiePolicyClientPage() {
 							</h2>
 							<p>
 								This Cookie Policy explains how {COMPANY_NAME}
-								("we," "our," or "us") uses cookies and similar
+								&quot;we,&quot; &quot;our,&quot; or
+								&quot;us&quot;) uses cookies and similar
 								technologies on our website. This policy
 								provides you with information about how we use
 								cookies, what types of cookies we use, and how
@@ -150,7 +148,7 @@ export default function CookiePolicyClientPage() {
 								us with information about which pages are most
 								popular, how visitors move around the site, and
 								whether they encounter any errors. This helps us
-								improve the website's performance and user
+								improve the website&apos;s performance and user
 								experience.
 							</p>
 
@@ -329,7 +327,7 @@ export default function CookiePolicyClientPage() {
 							</h3>
 							<p>
 								Most browsers allow you to view, manage, delete,
-								and block cookies. Here's how to do it in
+								and block cookies. Here&apos;s how to do it in
 								popular browsers:
 							</p>
 							<ul className='list-disc pl-6 space-y-2'>
@@ -410,8 +408,8 @@ export default function CookiePolicyClientPage() {
 								We may update our Cookie Policy from time to
 								time. We will notify you of any changes by
 								posting the new Cookie Policy on this page and
-								updating the "Last updated" date. You are
-								advised to review this Cookie Policy
+								updating the &quot;Last updated&quot; date. You
+								are advised to review this Cookie Policy
 								periodically for any changes.
 							</p>
 						</div>

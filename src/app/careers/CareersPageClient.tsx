@@ -157,10 +157,10 @@ export default function CareersPageClient() {
 									Join Our Team
 								</h1>
 								<p className='max-w-[600px] text-muted-foreground md:text-xl/relaxed'>
-									Be part of a dynamic team that's passionate
-									about digital marketing and committed to
-									delivering exceptional results for our
-									clients.
+									Be part of a dynamic team that&apos;s
+									passionate about digital marketing and
+									committed to delivering exceptional results
+									for our clients.
 								</p>
 							</div>
 							<div className='flex flex-col gap-2 min-[400px]:flex-row'>
@@ -206,9 +206,10 @@ export default function CareersPageClient() {
 								Life at {COMPANY_NAME}
 							</h2>
 							<p className='max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-								We're more than just a digital marketing agency.
-								We're a community of passionate professionals
-								who value innovation, collaboration, and growth.
+								We&apos;re more than just a digital marketing
+								agency. We&apos;re a community of passionate
+								professionals who value innovation,
+								collaboration, and growth.
 							</p>
 						</div>
 					</motion.div>
@@ -355,7 +356,7 @@ export default function CareersPageClient() {
 											Passion
 										</h3>
 										<p className='text-muted-foreground'>
-											We're passionate about digital
+											We&apos;re passionate about digital
 											marketing and dedicated to helping
 											our clients succeed.
 										</p>
@@ -487,9 +488,9 @@ export default function CareersPageClient() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5, delay: 0.5 }}>
 						<p className='text-muted-foreground mb-4'>
-							Don't see a position that matches your skills? We're
-							always looking for talented individuals to join our
-							team.
+							Don&apos;t see a position that matches your skills?
+							We&apos;re always looking for talented individuals
+							to join our team.
 						</p>
 						<Button variant='outline' size='lg'>
 							Submit Your Resume
@@ -515,8 +516,8 @@ export default function CareersPageClient() {
 								Our Hiring Process
 							</h2>
 							<p className='max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-								Here's what you can expect when you apply for a
-								position at {COMPANY_NAME}.
+								Here&apos;s what you can expect when you apply
+								for a position at {COMPANY_NAME}.
 							</p>
 						</div>
 					</motion.div>

@@ -89,7 +89,7 @@ export default function FaqSection() {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5, delay: 0.6 }}>
 						<p className='text-muted-foreground mb-4'>
-							Still have questions? We're here to help.
+							Still have questions? We&apos;re here to help.
 						</p>
 						<Link href='/contact'>
 							<Button

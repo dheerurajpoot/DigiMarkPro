@@ -12,8 +12,8 @@ export default function CtaSection() {
 							Ready to Grow Your Business?
 						</h2>
 						<p className='max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-							Let's discuss how our digital marketing strategies
-							can help you achieve your business goals.
+							Let&apos;s discuss how our digital marketing
+							strategies can help you achieve your business goals.
 						</p>
 					</div>
 					<div className='flex flex-col gap-2 min-[400px]:flex-row'>

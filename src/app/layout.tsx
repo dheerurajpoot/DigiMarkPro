@@ -90,6 +90,10 @@ export default function RootLayout({
 				{/* Paste Google Analytics and Search Console code here */}
 
 				{/* Paste Google AdSense Code Here */}
+				<Script
+					async
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxxxx'
+					crossOrigin='anonymous'></Script>
 			</head>
 			<body className={inter.className}>
 				<div className='flex min-h-screen flex-col'>

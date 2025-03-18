@@ -1,9 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
 	COMPANY_ADDRESS,
 	COMPANY_EMAIL,
@@ -68,8 +65,8 @@ export default function TermsOfServicePageClient() {
 							</h2>
 							<p>
 								Welcome to {COMPANY_NAME}. These Terms of
-								Service ("Terms") govern your access to and use
-								of the
+								Service (&quot;Terms&quot;) govern your access
+								to and use of the
 								{COMPANY_NAME} website and services. By
 								accessing or using our services, you agree to be
 								bound by these Terms. If you disagree with any
@@ -85,31 +82,37 @@ export default function TermsOfServicePageClient() {
 							<ul className='list-disc pl-6 space-y-2'>
 								<li>
 									<strong>
-										"Company," "we," "us," or "our"
+										&quot;Company,&quot; &quot;we,&quot;
+										&quot;us,&quot; or &quot;our&quot;
 									</strong>{" "}
 									refers to {COMPANY_NAME}.
 								</li>
 								<li>
-									<strong>"Services"</strong> refers to the
-									digital marketing services provided by
+									<strong>&quot;Services&quot;</strong> refers
+									to the digital marketing services provided
+									by
 									{COMPANY_NAME}, including but not limited to
 									SEO, PPC advertising, social media
 									marketing, content marketing, and email
 									marketing.
 								</li>
 								<li>
-									<strong>"Website"</strong> refers to the
+									<strong>&quot;Website&quot;</strong> refers
+									to the
 									{COMPANY_NAME} website, accessible at
 									{DOMAIN_NAME}.
 								</li>
 								<li>
-									<strong>"You," "your," or "Client"</strong>{" "}
+									<strong>
+										&quot;You,&quot; &quot;your,&quot; or
+										&quot;Client&quot;
+									</strong>{" "}
 									refers to the individual or entity accessing
 									or using our Services.
 								</li>
 								<li>
-									<strong>"Content"</strong> refers to all
-									materials, information, data, text,
+									<strong>&quot;Content&quot;</strong> refers
+									to all materials, information, data, text,
 									graphics, links, or other materials provided
 									by us or you in connection with the
 									Services.
@@ -306,8 +309,8 @@ export default function TermsOfServicePageClient() {
 								directors, employees, agents, and affiliates
 								from and against any and all claims,
 								liabilities, damages, losses, costs, expenses,
-								or fees (including reasonable attorneys' fees)
-								arising from or relating to:
+								or fees (including reasonable attorneys&apos;
+								fees) arising from or relating to:
 							</p>
 							<ul className='list-disc pl-6 space-y-2'>
 								<li>Your use of our Services;</li>
@@ -459,15 +462,6 @@ export default function TermsOfServicePageClient() {
 								<p>Email: {COMPANY_EMAIL}</p>
 								<p>Phone: {COMPANY_PHONE}</p>
 							</div>
-						</div>
-
-						<div className='pt-8'>
-							<Link href='/'>
-								<Button variant='outline' className='group'>
-									<ArrowLeft className='mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1' />
-									Back to Home
-								</Button>
-							</Link>
 						</div>
 					</motion.div>
 				</div>

@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Award, Users, Briefcase, Heart } from "lucide-react";
+import { Award, Users, Briefcase, Heart } from "lucide-react";
 import CtaSection from "@/components/cta-section";
 import { COMPANY_NAME } from "@/lib/constant";
 
@@ -52,9 +50,9 @@ export default function AboutPage() {
 									About {COMPANY_NAME}
 								</h1>
 								<p className='max-w-[600px] text-muted-foreground md:text-xl/relaxed'>
-									We're a team of digital marketing experts
-									passionate about helping businesses grow
-									their online presence and achieve their
+									We&apos;re a team of digital marketing
+									experts passionate about helping businesses
+									grow their online presence and achieve their
 									goals.
 								</p>
 							</div>
@@ -109,17 +107,18 @@ export default function AboutPage() {
 									marketing, and more.
 								</p>
 								<p>
-									Throughout our journey, we've remained
+									Throughout our journey, we&apos;ve remained
 									committed to our core values: delivering
 									measurable results, maintaining
 									transparency, fostering innovation, and
 									building lasting client relationships.
 								</p>
 								<p>
-									Today, we're proud to have helped hundreds
-									of businesses across various industries
-									achieve their digital marketing goals and
-									establish a strong online presence.
+									Today, we&apos;re proud to have helped
+									hundreds of businesses across various
+									industries achieve their digital marketing
+									goals and establish a strong online
+									presence.
 								</p>
 							</div>
 						</div>
@@ -178,7 +177,7 @@ export default function AboutPage() {
 								<p className='text-muted-foreground'>
 									We operate with complete transparency and
 									honesty, ensuring our clients always know
-									what we're doing and why.
+									what we&apos;re doing and why.
 								</p>
 							</CardContent>
 						</Card>
@@ -187,9 +186,9 @@ export default function AboutPage() {
 								<Heart className='h-12 w-12 text-primary' />
 								<h3 className='text-xl font-bold'>Passion</h3>
 								<p className='text-muted-foreground'>
-									We're passionate about digital marketing and
-									dedicated to helping our clients succeed in
-									the digital landscape.
+									We&apos;re passionate about digital
+									marketing and dedicated to helping our
+									clients succeed in the digital landscape.
 								</p>
 							</CardContent>
 						</Card>
