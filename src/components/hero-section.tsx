@@ -175,7 +175,7 @@ export default function HeroSection() {
 						<div className='absolute w-full h-full bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-full blur-3xl opacity-20'></div>
 						<div className='relative z-10 w-full max-w-[550px] aspect-square'>
 							<Image
-								src='/placeholder.svg?height=550&width=550'
+								src='/heroimg.jpg?height=550&width=550'
 								width={550}
 								height={550}
 								alt='Digital Marketing Hero'

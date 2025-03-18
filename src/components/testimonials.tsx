@@ -6,21 +6,21 @@ export default function Testimonials() {
 	const testimonials = [
 		{
 			quote: "Working with this team transformed our online presence. Our organic traffic increased by 200% in just 6 months!",
-			author: "Sarah Johnson",
+			author: "Allen Johnson",
 			title: "CEO, TechStart Inc.",
-			avatar: "/placeholder.svg?height=80&width=80",
+			avatar: "/image1.jpg?height=80&width=80",
 		},
 		{
 			quote: "Their PPC campaigns delivered an ROI of 300%. They truly understand how to optimize ad spend for maximum results.",
 			author: "Michael Chen",
 			title: "Marketing Director, GrowthBox",
-			avatar: "/placeholder.svg?height=80&width=80",
+			avatar: "/image2.jpg?height=80&width=80",
 		},
 		{
 			quote: "The social media strategy they developed helped us connect with our audience in meaningful ways and increased our engagement by 150%.",
 			author: "Emily Rodriguez",
 			title: "Brand Manager, StyleHouse",
-			avatar: "/placeholder.svg?height=80&width=80",
+			avatar: "/image3.jpg?height=80&width=80",
 		},
 	];
 

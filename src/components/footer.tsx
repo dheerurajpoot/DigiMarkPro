@@ -8,6 +8,12 @@ import {
 	Phone,
 	MapPin,
 } from "lucide-react";
+import {
+	COMPANY_ADDRESS,
+	COMPANY_EMAIL,
+	COMPANY_NAME,
+	COMPANY_PHONE,
+} from "@/lib/constant";
 
 export default function Footer() {
 	return (
@@ -52,37 +58,30 @@ export default function Footer() {
 						<ul className='space-y-2 text-sm'>
 							<li>
 								<Link
-									href='/services/seo'
+									href='/services'
 									className='text-muted-foreground hover:text-primary'>
 									SEO Optimization
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='/services/ppc'
+									href='/services'
 									className='text-muted-foreground hover:text-primary'>
 									PPC Advertising
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='/services/social-media'
+									href='/services'
 									className='text-muted-foreground hover:text-primary'>
 									Social Media Marketing
 								</Link>
 							</li>
 							<li>
 								<Link
-									href='/services/content'
+									href='/services'
 									className='text-muted-foreground hover:text-primary'>
 									Content Marketing
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='/services/email'
-									className='text-muted-foreground hover:text-primary'>
-									Email Marketing
 								</Link>
 							</li>
 						</ul>
@@ -95,13 +94,6 @@ export default function Footer() {
 									href='/about'
 									className='text-muted-foreground hover:text-primary'>
 									About Us
-								</Link>
-							</li>
-							<li>
-								<Link
-									href='/team'
-									className='text-muted-foreground hover:text-primary'>
-									Our Team
 								</Link>
 							</li>
 							<li>
@@ -133,19 +125,19 @@ export default function Footer() {
 							<li className='flex items-start gap-2'>
 								<MapPin className='h-5 w-5 text-primary shrink-0 mt-0.5' />
 								<span className='text-muted-foreground'>
-									123 Marketing Street, Digital City, DC 12345
+									{COMPANY_ADDRESS}
 								</span>
 							</li>
 							<li className='flex items-center gap-2'>
 								<Phone className='h-5 w-5 text-primary shrink-0' />
 								<span className='text-muted-foreground'>
-									(555) 123-4567
+									{COMPANY_PHONE}
 								</span>
 							</li>
 							<li className='flex items-center gap-2'>
 								<Mail className='h-5 w-5 text-primary shrink-0' />
 								<span className='text-muted-foreground'>
-									info@digimarkpro.com
+									{COMPANY_EMAIL}
 								</span>
 							</li>
 						</ul>
@@ -153,8 +145,12 @@ export default function Footer() {
 				</div>
 				<div className='mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-4'>
 					<p className='text-xs text-muted-foreground'>
-						© {new Date().getFullYear()} DigiMarkPro. All rights
-						reserved.
+						© {new Date().getFullYear()} {COMPANY_NAME}. Developed
+						By
+						<Link className='text-blue-400' href='https://evtn.org'>
+							{" "}
+							EVTN
+						</Link>
 					</p>
 					<div className='flex gap-4 text-xs'>
 						<Link

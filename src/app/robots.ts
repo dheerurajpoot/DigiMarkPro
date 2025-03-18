@@ -1,3 +1,4 @@
+import { DOMAIN_NAME } from "@/lib/constant";
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
 			allow: "/",
 			disallow: ["/admin/", "/private/"],
 		},
-		sitemap: "https://digimarkpro.com/sitemap.xml",
+		sitemap: `${DOMAIN_NAME}/sitemap.xml`,
 	};
 }

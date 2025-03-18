@@ -4,9 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Award, Users, Briefcase, Heart } from "lucide-react";
 import CtaSection from "@/components/cta-section";
+import { COMPANY_NAME } from "@/lib/constant";
 
 export const metadata = {
-	title: "About Us - DigiMarkPro",
+	title: `About Us - ${COMPANY_NAME}`,
 	description:
 		"Learn about our digital marketing agency, our mission, values, and the team behind our success.",
 };
@@ -14,28 +15,28 @@ export const metadata = {
 export default function AboutPage() {
 	const teamMembers = [
 		{
-			name: "Alex Johnson",
+			name: "Amit Kumar",
 			role: "Founder & CEO",
-			bio: "With over 15 years of experience in digital marketing, Alex founded DigiMarkPro with a vision to help businesses achieve meaningful growth through strategic digital solutions.",
-			image: "/placeholder.svg?height=300&width=300",
+			bio: `With over 15 years of experience in digital marketing, Alex founded ${COMPANY_NAME} with a vision to help businesses achieve meaningful growth through strategic digital solutions.`,
+			image: "/image1.jpg?height=300&width=300",
 		},
 		{
-			name: "Sarah Williams",
+			name: "Sam Williams",
 			role: "SEO Director",
-			bio: "Sarah leads our SEO department with her extensive knowledge of search algorithms and optimization strategies that drive organic traffic and improve rankings.",
-			image: "/placeholder.svg?height=300&width=300",
+			bio: "Sam leads our SEO department with his extensive knowledge of search algorithms and optimization strategies that drive organic traffic and improve rankings.",
+			image: "/image2.jpg?height=300&width=300",
 		},
 		{
 			name: "Michael Chen",
 			role: "PPC Specialist",
 			bio: "Michael's expertise in paid advertising has helped our clients achieve remarkable ROI through carefully crafted and optimized ad campaigns across multiple platforms.",
-			image: "/placeholder.svg?height=300&width=300",
+			image: "/image3.jpg?height=300&width=300",
 		},
 		{
 			name: "Emily Rodriguez",
 			role: "Social Media Manager",
 			bio: "Emily's creative approach to social media strategy has enabled brands to build meaningful connections with their audiences and drive engagement across platforms.",
-			image: "/placeholder.svg?height=300&width=300",
+			image: "/image4.jpg?height=300&width=300",
 		},
 	];
 
@@ -48,7 +49,7 @@ export default function AboutPage() {
 						<div className='flex flex-col justify-center space-y-4'>
 							<div className='space-y-2'>
 								<h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-									About DigiMarkPro
+									About {COMPANY_NAME}
 								</h1>
 								<p className='max-w-[600px] text-muted-foreground md:text-xl/relaxed'>
 									We're a team of digital marketing experts
@@ -60,7 +61,7 @@ export default function AboutPage() {
 						</div>
 						<div className='flex items-center justify-center'>
 							<Image
-								src='/placeholder.svg?height=550&width=550'
+								src='/aboutimg.jpg?height=550&width=550'
 								width={550}
 								height={550}
 								alt='Our Team'
@@ -77,7 +78,7 @@ export default function AboutPage() {
 					<div className='grid gap-6 lg:grid-cols-2 lg:gap-12'>
 						<div className='flex items-center justify-center'>
 							<Image
-								src='/placeholder.svg?height=550&width=550'
+								src='/story.jpg?height=550&width=550'
 								width={550}
 								height={550}
 								alt='Our Story'
@@ -93,7 +94,7 @@ export default function AboutPage() {
 									From Humble Beginnings to Industry Leaders
 								</h2>
 								<p className='text-muted-foreground md:text-xl/relaxed'>
-									Founded in 2010, DigiMarkPro began as a
+									Founded in 2020, {COMPANY_NAME} began as a
 									small team with a big vision: to make
 									effective digital marketing accessible to
 									businesses of all sizes.
@@ -240,14 +241,6 @@ export default function AboutPage() {
 								</div>
 							</div>
 						))}
-					</div>
-					<div className='mt-12 text-center'>
-						<Link href='/team'>
-							<Button variant='outline' size='lg'>
-								View Full Team
-								<ArrowRight className='ml-2 h-4 w-4' />
-							</Button>
-						</Link>
 					</div>
 				</div>
 			</section>

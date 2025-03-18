@@ -28,7 +28,7 @@ export default function StatsSection() {
 	const stats = [
 		{ value: 200, label: "Clients Served", suffix: "+" },
 		{ value: 500, label: "Campaigns Launched", suffix: "+" },
-		{ value: 10, label: "Years Experience", suffix: "" },
+		{ value: 5, label: "Years Experience", suffix: "" },
 		{ value: 300, label: "Average ROI", suffix: "%" },
 	];
 

@@ -19,9 +19,10 @@ import {
 	BarChart,
 } from "lucide-react";
 import CtaSection from "@/components/cta-section";
+import { COMPANY_NAME } from "@/lib/constant";
 
 export const metadata = {
-	title: "Services - DigiMarkPro",
+	title: `Services - ${COMPANY_NAME}`,
 	description:
 		"Explore our comprehensive digital marketing services designed to help your business grow online.",
 };
@@ -41,7 +42,7 @@ export default function ServicesPage() {
 				"Local SEO Optimization",
 				"SEO Performance Reporting",
 			],
-			link: "/services/seo",
+			link: "/contact",
 		},
 		{
 			icon: <Zap className='h-10 w-10 text-primary' />,
@@ -56,7 +57,7 @@ export default function ServicesPage() {
 				"Conversion Tracking",
 				"ROI & Performance Analysis",
 			],
-			link: "/services/ppc",
+			link: "/contact",
 		},
 		{
 			icon: <Users className='h-10 w-10 text-primary' />,
@@ -71,7 +72,7 @@ export default function ServicesPage() {
 				"Influencer Partnerships",
 				"Performance Analytics",
 			],
-			link: "/services/social-media",
+			link: "/contact",
 		},
 		{
 			icon: <FileText className='h-10 w-10 text-primary' />,
@@ -86,7 +87,7 @@ export default function ServicesPage() {
 				"Video Content Production",
 				"Content Distribution",
 			],
-			link: "/services/content",
+			link: "/contact",
 		},
 		{
 			icon: <Mail className='h-10 w-10 text-primary' />,
@@ -101,7 +102,7 @@ export default function ServicesPage() {
 				"A/B Testing & Optimization",
 				"Performance Tracking",
 			],
-			link: "/services/email",
+			link: "/contact",
 		},
 		{
 			icon: <BarChart className='h-10 w-10 text-primary' />,
@@ -116,7 +117,7 @@ export default function ServicesPage() {
 				"Competitor Benchmarking",
 				"Monthly Performance Reports",
 			],
-			link: "/services/analytics",
+			link: "/contact",
 		},
 	];
 

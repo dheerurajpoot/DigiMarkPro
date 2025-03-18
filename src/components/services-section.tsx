@@ -26,7 +26,7 @@ export default function ServicesSection() {
 				"On-Page Optimization",
 				"Link Building",
 			],
-			link: "/services/seo",
+			link: "/services",
 		},
 		{
 			icon: <Zap className='h-6 w-6 text-primary' />,
@@ -38,7 +38,7 @@ export default function ServicesSection() {
 				"Social Media Ads",
 				"Retargeting Campaigns",
 			],
-			link: "/services/ppc",
+			link: "/services",
 		},
 		{
 			icon: <Users className='h-6 w-6 text-primary' />,
@@ -50,7 +50,7 @@ export default function ServicesSection() {
 				"Community Management",
 				"Analytics & Reporting",
 			],
-			link: "/services/social-media",
+			link: "/services",
 		},
 	];
 

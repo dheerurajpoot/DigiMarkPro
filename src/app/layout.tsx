@@ -6,14 +6,15 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Script from "next/script";
 import type { Metadata } from "next";
+import { COMPANY_NAME, DOMAIN_NAME } from "@/lib/constant";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://digimarkpro.com"),
+	metadataBase: new URL(`${DOMAIN_NAME}`),
 	title: {
-		default: "DigiMarkPro - Digital Marketing Agency",
-		template: "%s | DigiMarkPro",
+		default: `${COMPANY_NAME} - Digital Marketing Agency`,
+		template: `%s | ${COMPANY_NAME}`,
 	},
 	description:
 		"Professional digital marketing services to help your business grow online. SEO, PPC, social media, and content marketing solutions.",
@@ -24,10 +25,11 @@ export const metadata: Metadata = {
 		"social media marketing",
 		"content marketing",
 		"digital agency",
+		`${COMPANY_NAME}`,
 	],
 	authors: [{ name: "Dheeru Rajpoot" }],
-	creator: "DigiMarkPro",
-	publisher: "DigiMarkPro",
+	creator: `${COMPANY_NAME}`,
+	publisher: `${COMPANY_NAME}`,
 	formatDetection: {
 		email: false,
 		address: false,
@@ -47,36 +49,33 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://digimarkpro.com",
-		siteName: "DigiMarkPro",
-		title: "DigiMarkPro - Digital Marketing Agency",
+		url: `${DOMAIN_NAME}`,
+		siteName: `${COMPANY_NAME}`,
+		title: `${COMPANY_NAME} - Digital Marketing Agency`,
 		description:
 			"Professional digital marketing services to help your business grow online. SEO, PPC, social media, and content marketing solutions.",
 		images: [
 			{
-				url: "https://digimarkpro.com/og-image.jpg",
+				url: `${DOMAIN_NAME}/aboutimg.jpg`,
 				width: 1200,
 				height: 630,
-				alt: "DigiMarkPro - Digital Marketing Agency",
+				alt: `${COMPANY_NAME} - Digital Marketing Agency`,
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "DigiMarkPro - Digital Marketing Agency",
+		title: `${COMPANY_NAME} - Digital Marketing Agency`,
 		description:
 			"Professional digital marketing services to help your business grow online. SEO, PPC, social media, and content marketing solutions.",
-		creator: "@digimarkpro",
-		images: ["https://digimarkpro.com/twitter-image.jpg"],
+		creator: `@${COMPANY_NAME}`,
+		images: [`${DOMAIN_NAME}/aboutimg.jpg`],
 	},
 	alternates: {
-		canonical: "https://digimarkpro.com",
+		canonical: `${DOMAIN_NAME}`,
 		languages: {
-			"en-US": "https://digimarkpro.com",
+			"en-US": `${DOMAIN_NAME}`,
 		},
-	},
-	verification: {
-		google: "your-google-site-verification-code",
 	},
 };
 
@@ -88,27 +87,9 @@ export default function RootLayout({
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<head>
-				{/* Google Analytics */}
-				<Script
-					src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'
-					strategy='afterInteractive'
-				/>
-				<Script id='google-analytics' strategy='afterInteractive'>
-					{`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
-          `}
-				</Script>
+				{/* Paste Google Analytics and Search Console code here */}
 
-				{/* Google AdSense */}
-				<Script
-					async
-					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX'
-					crossOrigin='anonymous'
-					strategy='afterInteractive'
-				/>
+				{/* Paste Google AdSense Code Here */}
 			</head>
 			<body className={inter.className}>
 				<div className='flex min-h-screen flex-col'>
@@ -116,33 +97,6 @@ export default function RootLayout({
 					<main className='flex-1'>{children}</main>
 					<Footer />
 				</div>
-
-				{/* Structured Data */}
-				<Script
-					id='structured-data'
-					type='application/ld+json'
-					dangerouslySetInnerHTML={{
-						__html: JSON.stringify({
-							"@context": "https://schema.org",
-							"@type": "Organization",
-							name: "DigiMarkPro",
-							url: "https://digimarkpro.com",
-							logo: "https://digimarkpro.com/logo.png",
-							sameAs: [
-								"https://www.facebook.com/digimarkpro",
-								"https://www.twitter.com/digimarkpro",
-								"https://www.linkedin.com/company/digimarkpro",
-								"https://www.instagram.com/digimarkpro",
-							],
-							contactPoint: {
-								"@type": "ContactPoint",
-								telephone: "+1-555-123-4567",
-								contactType: "customer service",
-								availableLanguage: "English",
-							},
-						}),
-					}}
-				/>
 			</body>
 		</html>
 	);

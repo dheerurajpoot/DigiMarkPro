@@ -8,9 +8,15 @@ import {
 } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import ContactForm from "@/components/contact-form";
+import {
+	COMPANY_ADDRESS,
+	COMPANY_EMAIL,
+	COMPANY_NAME,
+	COMPANY_PHONE,
+} from "@/lib/constant";
 
 export const metadata = {
-	title: "Contact Us - DigiMarkPro",
+	title: `Contact Us - ${COMPANY_NAME}`,
 	description:
 		"Get in touch with our digital marketing experts to discuss your business needs.",
 };
@@ -68,11 +74,7 @@ export default function ContactPage() {
 												Address
 											</h3>
 											<p className='text-muted-foreground'>
-												123 Marketing Street
-												<br />
-												Digital City, DC 12345
-												<br />
-												United States
+												{COMPANY_ADDRESS}
 											</p>
 										</div>
 									</div>
@@ -83,7 +85,7 @@ export default function ContactPage() {
 												Phone
 											</h3>
 											<p className='text-muted-foreground'>
-												(555) 123-4567
+												{COMPANY_PHONE}
 											</p>
 										</div>
 									</div>
@@ -94,7 +96,7 @@ export default function ContactPage() {
 												Email
 											</h3>
 											<p className='text-muted-foreground'>
-												info@digimarkpro.com
+												{COMPANY_EMAIL}
 											</p>
 										</div>
 									</div>

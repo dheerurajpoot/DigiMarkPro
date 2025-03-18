@@ -8,15 +8,15 @@ export default function ToolsSection() {
 			items: [
 				{
 					name: "Google Analytics",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/ga.png?height=60&width=120",
 				},
 				{
 					name: "SEMrush",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/semrus.png?height=60&width=120",
 				},
 				{
 					name: "Ahrefs",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/ahrefs.png?height=60&width=120",
 				},
 			],
 		},
@@ -25,15 +25,15 @@ export default function ToolsSection() {
 			items: [
 				{
 					name: "Google Ads",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/gads.png?height=60&width=120",
 				},
 				{
 					name: "Facebook Ads",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/fads.png?height=60&width=120",
 				},
 				{
 					name: "LinkedIn Ads",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/lads.png?height=60&width=120",
 				},
 			],
 		},
@@ -42,26 +42,26 @@ export default function ToolsSection() {
 			items: [
 				{
 					name: "Hootsuite",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/hootsuite.png?height=60&width=120",
 				},
-				{ name: "Canva", logo: "/placeholder.svg?height=60&width=120" },
+				{ name: "Canva", logo: "/canva.png?height=60&width=120" },
 				{
 					name: "Buffer",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/buffer.png?height=60&width=120",
 				},
 			],
 		},
 		{
 			category: "SEO",
 			items: [
-				{ name: "Moz", logo: "/placeholder.svg?height=60&width=120" },
+				{ name: "Moz", logo: "/moz.png?height=60&width=120" },
 				{
 					name: "Screaming Frog",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/frog.png?height=60&width=120",
 				},
 				{
 					name: "Yoast SEO",
-					logo: "/placeholder.svg?height=60&width=120",
+					logo: "/yoast.png?height=60&width=120",
 				},
 			],
 		},

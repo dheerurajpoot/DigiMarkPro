@@ -15,9 +15,10 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
+import { COMPANY_NAME } from "@/lib/constant";
 
 export const metadata = {
-	title: "Pricing - DigiMarkPro",
+	title: `Pricing - ${COMPANY_NAME}`,
 	description:
 		"Explore our flexible pricing plans designed to fit businesses of all sizes.",
 };
@@ -112,7 +113,7 @@ export default function PricingPage() {
 	return (
 		<div className='flex flex-col min-h-screen'>
 			{/* Hero Section */}
-			<section className='w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-primary/5 to-background'>
+			<section className='w-full py-12 bg-gradient-to-b from-primary/5 to-background'>
 				<div className='container mx-auto px-4 md:px-6'>
 					<div className='flex flex-col items-center justify-center space-y-4 text-center'>
 						<div className='space-y-2'>
@@ -129,7 +130,7 @@ export default function PricingPage() {
 			</section>
 
 			{/* Pricing Cards */}
-			<section className='w-full py-12 md:py-24 lg:py-32 bg-background'>
+			<section className='w-full py-12 bg-background'>
 				<div className='container mx-auto px-4 md:px-6'>
 					<div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
 						{plans.map((plan, index) => (
