@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -56,7 +56,12 @@ interface RelatedPost {
 	slug: string;
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+type PageProps = {
+	params: Promise<{ slug: string }>;
+};
+
+export default function BlogPostPage({ params }: PageProps) {
+	const { slug } = React.use(params);
 	const [post, setPost] = useState<Post | null>(null);
 	const [relatedPosts, setRelatedPosts] = useState<RelatedPost[]>([]);
 	const [isLoading, setIsLoading] = useState(true);
@@ -119,7 +124,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 					avatar: "/placeholder.svg?height=80&width=80",
 				},
 				category: "SEO",
-				image: "/placeholder.svg?height=600&width=1200",
+				image: "/aboutimg.jpg?height=600&width=1200",
 				tags: [
 					"SEO",
 					"Digital Marketing",
@@ -138,7 +143,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 					date: "March 10, 2025",
 					author: "Michael Chen",
 					category: "PPC",
-					image: "/placeholder.svg?height=400&width=600",
+					image: "/why.jpg?height=400&width=600",
 					slug: "ppc-campaign-converts",
 				},
 				{
@@ -148,7 +153,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 					date: "March 5, 2025",
 					author: "Emily Rodriguez",
 					category: "Social Media",
-					image: "/placeholder.svg?height=400&width=600",
+					image: "/aboutimg.jpg?height=400&width=600",
 					slug: "social-media-trends-2025",
 				},
 				{
@@ -158,7 +163,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 					date: "February 28, 2025",
 					author: "David Thompson",
 					category: "Content Marketing",
-					image: "/placeholder.svg?height=400&width=600",
+					image: "/heroimg.jpg?height=400&width=600",
 					slug: "ultimate-guide-content-marketing",
 				},
 			];
@@ -169,7 +174,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 		};
 
 		fetchPost();
-	}, [params.slug]);
+	}, [slug]);
 
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -250,7 +255,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}>
 						<Image
-							src={post?.image || "/placeholder.svg"}
+							src={post?.image || "/aboutimg.jpg"}
 							alt='blog image'
 							fill
 							className='object-cover'
