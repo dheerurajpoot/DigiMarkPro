@@ -92,7 +92,7 @@ export default function RootLayout({
 				{/* Paste Google AdSense Code Here */}
 				<Script
 					async
-					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxxxx'
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3138751846532107'
 					crossOrigin='anonymous'></Script>
 			</head>
 			<body className={inter.className}>
