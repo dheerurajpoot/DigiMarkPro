@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 // import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import Script from "next/script";
 import type { Metadata } from "next";
 import { COMPANY_NAME, DOMAIN_NAME } from "@/lib/constant";
 
@@ -90,10 +89,10 @@ export default function RootLayout({
 				{/* Paste Google Analytics and Search Console code here */}
 
 				{/* Paste Google AdSense Code Here */}
-				<Script
+				<script
 					async
 					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3138751846532107'
-					crossOrigin='anonymous'></Script>
+					crossOrigin='anonymous'></script>
 			</head>
 			<body className={inter.className}>
 				<div className='flex min-h-screen flex-col'>
